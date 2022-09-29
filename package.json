@@ -1,7 +1,7 @@
 {
   "name": "round-robin-tournament",
   "version": "0.1.0",
-  "homepage": "https://mkut.github.io/react-gh-pages",
+  "homepage": "https://mkut.github.io/round-robin-tournament",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
