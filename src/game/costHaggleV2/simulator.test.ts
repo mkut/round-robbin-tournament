@@ -1,4 +1,4 @@
-import { Character } from "./core";
+import { Character, Skill } from "./core";
 import { simulate } from "./simulator";
 import { allSkills } from "./skills";
 
@@ -54,6 +54,38 @@ function makeRandomCharacter(): Character {
    };
 }
 
+function randomDistribute(
+   numPlayer: number,
+   skillsPerPlayer: number
+): string[][] {
+   const random = new Random(Date.now());
+   const arr: number[] = [];
+   const repeat = Math.ceil(
+      (numPlayer * skillsPerPlayer) / (skillList.length - 1)
+   );
+   for (let i = 0; i < repeat; i++) {
+      for (let j = 0; j < skillList.length; j++) {
+         if (j != 11) {
+            arr.push(j);
+         }
+      }
+   }
+   for (let i = 0; i < arr.length; i++) {
+      const j = random.signedNext() % (arr.length - i);
+      const tmp = arr[i];
+      arr[i] = arr[j];
+      arr[j] = tmp;
+   }
+   const ret: string[][] = [];
+   for (let i = 0; i < numPlayer; i++) {
+      ret.push([]);
+      for (let j = 0; j < skillsPerPlayer; j++) {
+         ret[i].push(skillList[arr[i * skillsPerPlayer + j]].name);
+      }
+   }
+   return ret;
+}
+
 test("random test", () => {
    const p1: Character = {
       name: "P1",
@@ -101,4 +133,8 @@ test("simulator test", () => {
    };
    const { win, log } = simulate(p1, p2);
    console.log(win, log);
+});
+
+test("generate test", () => {
+   console.log(randomDistribute(7, 10));
 });
