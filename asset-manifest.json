@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/round-robin-tournament/static/css/main.073c9b0a.css",
-    "main.js": "/round-robin-tournament/static/js/main.e44ec2a7.js",
+    "main.css": "/round-robin-tournament/static/css/main.b6b43258.css",
+    "main.js": "/round-robin-tournament/static/js/main.d1ff173a.js",
     "static/js/787.9ce441b3.chunk.js": "/round-robin-tournament/static/js/787.9ce441b3.chunk.js",
-    "static/media/logo.svg": "/round-robin-tournament/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/round-robin-tournament/index.html",
-    "main.073c9b0a.css.map": "/round-robin-tournament/static/css/main.073c9b0a.css.map",
-    "main.e44ec2a7.js.map": "/round-robin-tournament/static/js/main.e44ec2a7.js.map",
+    "main.b6b43258.css.map": "/round-robin-tournament/static/css/main.b6b43258.css.map",
+    "main.d1ff173a.js.map": "/round-robin-tournament/static/js/main.d1ff173a.js.map",
     "787.9ce441b3.chunk.js.map": "/round-robin-tournament/static/js/787.9ce441b3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.e44ec2a7.js"
+    "static/css/main.b6b43258.css",
+    "static/js/main.d1ff173a.js"
   ]
 }
